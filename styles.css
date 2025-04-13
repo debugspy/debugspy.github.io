@@ -1,0 +1,126 @@
+/* styles.css - +  +  +  +  */
+body {
+  font-family: Verdana, sans-serif, 'Segoe UI', Tahoma, Geneva;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f9ff;
+  color: #3e495b;
+  font-size: 13px;
+}
+
+header, footer {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #e0f2fe;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+/*  */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*  */
+button, .button {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #2563eb;
+}
+
+footer a {
+  color: #bfdbfe;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/*  */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+/*  */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+/*  */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.card-text {
+  flex: 1;
+}
+
+/*  */
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image {
+    width: 80px;
+    height: 80px;
+  }
+}
