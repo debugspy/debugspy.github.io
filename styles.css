@@ -108,6 +108,14 @@ footer a:hover {
   flex-shrink: 0;
 }
 
+.shoot-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
 .card-text {
   flex: 1;
 }
