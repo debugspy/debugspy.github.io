@@ -3,33 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AudioCatch - Convert video to audio for macOS" />
-  <meta name="keywords" content="AudioCatch, video to audio, mp4 to mp3, audio converter, Debug Studio, audio extraction" />
+  <meta name="description" content="Support — Debug Studio. Get help with AudioCatch and TextCatch." />
+  <meta name="keywords" content="Debug Studio support, AudioCatch help, TextCatch help" />
   <meta name="author" content="Debug Studio" />
-  <title>Support - Debug Studio</title>
+  <title>Support — Debug Studio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Debug Studio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="download.html">Download</a>
-      <a href="support.html">Support</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">D</div>
+        <span class="brand-name">Debug Studio</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="support.html" class="nav-active">Support</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="section card">
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <h2>Support</h2>
+      <p>We're here to help. Reach out any time.</p>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="content-card">
       <h2>Contact Us</h2>
-      <p>If you have any suggestions about our products or services, please contact us. We are committed to providing the best support possible.</p>
-      <p>Email us at: <a href="mailto:debugspy@gmail.com">debugspy@gmail.com</a></p>
+      <p>If you have any questions, suggestions, or run into an issue with any of our apps, please don't hesitate to get in touch. We read every message and aim to respond as quickly as possible.</p>
+      <p>Email us at: <a class="js-email"></a></p>
+    </div>
+
+    <div class="content-card">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong style="color:var(--gray-700)">Does TextCatch require an internet connection?</strong><br>
+      No. All transcription is handled entirely on your Mac using local Whisper models. Your files never leave your device.</p>
+      <p><strong style="color:var(--gray-700)">Which Whisper model should I use in TextCatch?</strong><br>
+      The <em>small</em> or <em>medium</em> model offers a good balance of speed and accuracy for most use cases. Use <em>large</em> for the highest accuracy, or <em>tiny</em> / <em>base</em> for the fastest results.</p>
+      <p><strong style="color:var(--gray-700)">What video formats does AudioCatch support?</strong><br>
+      AudioCatch supports MP4, MKV, MPEG, AVI, WMV, ASF, FLV, F4V, RM, RMVB, VOB, DAT, DV, and many more common video formats.</p>
+      <p><strong style="color:var(--gray-700)">Where can I download AudioCatch?</strong><br>
+      AudioCatch is available on the <a href="https://apps.apple.com/us/app/audio-catch/id6744355684">Mac App Store</a>.</p>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Debug Studio. All rights reserved. <a href="privacy_policy_audio_catch.html">Privacy Policy</a></p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-logo brand-logo-sm">D</div>
+        <span>Debug Studio</span>
+      </div>
+      <p class="footer-copy">&copy; 2025 Debug Studio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      var c =[100,101,98,117,103,115,112,121,64,103,109,97,105,108,46,99,111,109];
+      var addr = c.map(function (n) { return String.fromCharCode(n); }).join('');
+      document.querySelectorAll('.js-email').forEach(function (el) {
+        el.href = 'mail' + 'to:' + addr;
+        el.textContent = addr;
+      });
+    })();
+  </script>
 </body>
 </html>
